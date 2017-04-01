@@ -81,12 +81,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DoorScript.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudio.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudioRoom.cs" />
-    <Compile Include="Assets\InteractScript.cs" />
-    <Compile Include="Assets\LookScript.cs" />
-    <Compile Include="Assets\PlayerMovementScript.cs" />
+    <Compile Include="Assets\MyScripts\DoorScript.cs" />
+    <Compile Include="Assets\MyScripts\InteractScript.cs" />
+    <Compile Include="Assets\MyScripts\LookScript.cs" />
+    <Compile Include="Assets\MyScripts\PlayerMovementScript.cs" />
+    <Compile Include="Assets\MyScripts\PlayerSwitchScript.cs" />
+    <Compile Include="Assets\MyScripts\SnapshotScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\FMOD\LICENSE.TXT" />

@@ -1,9 +1,9 @@
+{71d7c442-eed3-4476-9bba-3e8946524e92} event:/Finder Sounds/Beep Proximity
 {6add4611-f83b-4d46-8f77-c6e3755a6b53} event:/Seeker Sounds/Door
 {e823165d-aac9-4804-aeee-c92cb5a2bfbb} event:/Seeker Sounds/Footsteps
-{71d7c442-eed3-4476-9bba-3e8946524e92} event:/Finder Sounds/Beep Proximity
 {d25507e9-32c1-425f-966f-6fa6d51fd779} bus:/
-{54450d75-ea11-41a6-8418-d3197690609b} bus:/Seeker Sounds
 {0ef58908-d69c-44c4-81b1-dd330bc57d47} bus:/Finder Souds
+{54450d75-ea11-41a6-8418-d3197690609b} bus:/Seeker Sounds
 {6259fa6d-8ca4-459c-abfa-9642486100ae} bus:/Reverb
 {030d0fd0-a71d-4f82-9a76-dfaabcb7fdf2} snapshot:/Small Room
 {87ce5b87-fb69-477d-a4fc-1755979b7679} snapshot:/Medium Room

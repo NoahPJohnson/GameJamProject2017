@@ -31,7 +31,7 @@ public class PlayerMovementScript : MonoBehaviour
     {
         
         moveVector.Set(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        moveVector = headCamera.transform.TransformDirection(moveVector);
+        moveVector = transform.TransformDirection(moveVector);
         characterController.Move(moveVector*speed*Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {

@@ -2,12 +2,21 @@
 <objects serializationModel="Studio.01.09.00">
     <object class="Snapshot" id="{e1c6aa67-2a72-4f03-9836-e490c1dd7004}">
         <relationship name="uiLastParameterSelection">
-            <destination>{26e3a17e-d6b1-4c8d-99f7-7cd6025babac}</destination>
+            <destination>{e4fe3ac4-c6d5-4134-aff6-944f90dec3e1}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{1591232a-98ea-4713-a8bb-ea139876ddc7}"/>
     <object class="MarkerTrack" id="{75705aa4-8297-45df-a98d-4bf0b3a98337}"/>
-    <object class="Timeline" id="{26e3a17e-d6b1-4c8d-99f7-7cd6025babac}"/>
+    <object class="Timeline" id="{26e3a17e-d6b1-4c8d-99f7-7cd6025babac}">
+        <property name="uiLastRulerScaleRatio">
+            <value>0.045112781954887216</value>
+        </property>
+    </object>
+    <object class="GameParameter" id="{e4fe3ac4-c6d5-4134-aff6-944f90dec3e1}">
+        <property name="uiLastRulerScaleRatio">
+            <value>0.15037593984962405</value>
+        </property>
+    </object>
     <object class="SnapshotMasterTrack" id="{79d459a6-78bc-4e48-9110-1666e5eea71d}"/>
     <object class="SnapshotProperty" id="{d2e3feeb-16a0-4a96-9923-b5a2c52d76e8}"/>
     <object class="SnapshotProperty" id="{f13b4217-52fe-466e-93b1-a99c83bb2718}"/>
@@ -23,6 +32,16 @@
     <object class="SnapshotProperty" id="{633d6992-2e07-4874-ade6-8d5347ee8e4d}"/>
     <object class="SnapshotProperty" id="{7a2399f3-09f9-48ad-a522-5b713d22b683}"/>
     <object class="SnapshotProperty" id="{8f99fdc0-4bd0-428b-be1f-361416f924b2}"/>
-    <object class="SnapshotTrack" id="{4d6f714b-b216-4902-8c11-083d1587ecdb}"/>
+    <object class="SnapshotProperty" id="{7eaeb435-70fc-493a-9fd0-3e48f93bce63}"/>
+    <object class="SnapshotTrack" id="{4d6f714b-b216-4902-8c11-083d1587ecdb}">
+        <property name="uiAutomationTracksVisible">
+            <value>true</value>
+        </property>
+        <property name="uiTrackHeight">
+            <value>100</value>
+        </property>
+    </object>
     <object class="SnapshotTrack" id="{7dea6dda-cd85-4f1c-b605-eddb19402b20}"/>
+    <object class="SnapshotTrack" id="{dea7e3d9-f4a9-4159-b6de-379e651283ae}"/>
+    <object class="AutomationTrack" id="{eef2dbe0-82fb-4760-af21-8b45cb4aebfe}"/>
 </objects>

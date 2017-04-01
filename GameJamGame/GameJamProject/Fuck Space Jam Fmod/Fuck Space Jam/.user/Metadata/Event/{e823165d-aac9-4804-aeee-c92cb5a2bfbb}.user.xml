@@ -19,26 +19,18 @@
     <object class="GroupTrack" id="{ce383868-6858-472c-860b-4d6eb13bbce1}"/>
     <object class="Timeline" id="{084792cf-1c6f-4dc7-a0bd-f64423f5994f}">
         <property name="cursorPosition">
-            <value>0.1024</value>
+            <value>0</value>
         </property>
         <property name="uiLastRulerScaleRatio">
-            <value>0.0021333333333333334</value>
-        </property>
-        <property name="uiLastHorizontalScrollBarValue">
-            <value>7</value>
+            <value>0.0014309573934837092</value>
         </property>
     </object>
     <object class="GameParameter" id="{09c88966-9fc4-4369-80f6-b6c651cbb567}">
         <property name="cursorPosition">
-            <value>1.2932330827067671</value>
+            <value>3</value>
         </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.0060150375939849628</value>
-        </property>
-    </object>
-    <object class="GameParameter" id="{3d051b66-4728-4670-af9a-bb044068392f}">
-        <property name="uiLastRulerScaleRatio">
-            <value>0.0076452599388379203</value>
         </property>
     </object>
     <object class="EventMixerMaster" id="{a7dea6b1-ea8f-4213-9418-85b99f245049}">

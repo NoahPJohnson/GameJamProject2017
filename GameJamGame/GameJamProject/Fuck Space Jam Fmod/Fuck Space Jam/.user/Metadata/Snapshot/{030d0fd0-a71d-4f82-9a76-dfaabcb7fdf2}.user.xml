@@ -7,7 +7,19 @@
     </object>
     <object class="EventAutomatableProperties" id="{1d38a43c-7fa3-4402-86ca-077d6508dcb4}"/>
     <object class="MarkerTrack" id="{5de75646-3990-423b-9a51-d2e2fd91039b}"/>
-    <object class="Timeline" id="{dfe6a7d0-6b17-4de7-b426-f82ceb38cd45}"/>
+    <object class="Timeline" id="{dfe6a7d0-6b17-4de7-b426-f82ceb38cd45}">
+        <property name="uiLastRulerScaleRatio">
+            <value>0.045112781954887216</value>
+        </property>
+    </object>
+    <object class="GameParameter" id="{3881377f-e7c6-4ee1-b77a-1a69d0ebf01f}">
+        <property name="cursorPosition">
+            <value>100</value>
+        </property>
+        <property name="uiLastRulerScaleRatio">
+            <value>0.15037593984962405</value>
+        </property>
+    </object>
     <object class="SnapshotMasterTrack" id="{523eeb70-fa7a-42e5-b9e1-08e078202275}"/>
     <object class="SnapshotProperty" id="{67294671-70b6-4cb7-94a0-3a46e1d870f0}"/>
     <object class="SnapshotProperty" id="{61107c42-9a8e-4e90-8291-14a51c1ce6fa}"/>
@@ -24,6 +36,16 @@
     <object class="SnapshotProperty" id="{9d01541a-830a-4eae-af77-386f20de9967}"/>
     <object class="SnapshotProperty" id="{8de2cf97-29b6-47b4-abeb-6581de53480e}"/>
     <object class="SnapshotProperty" id="{b498a666-b84d-48ff-acfe-f7600a4c0e59}"/>
+    <object class="SnapshotProperty" id="{d940de5d-b56e-4a8b-bb85-483ed14e8dde}"/>
     <object class="SnapshotTrack" id="{264aaa3a-bdac-4505-ac6d-b03507bad857}"/>
-    <object class="SnapshotTrack" id="{185af52c-72d8-4774-8c82-d8a9040b4014}"/>
+    <object class="SnapshotTrack" id="{185af52c-72d8-4774-8c82-d8a9040b4014}">
+        <property name="uiAutomationTracksVisible">
+            <value>true</value>
+        </property>
+        <property name="uiTrackHeight">
+            <value>200</value>
+        </property>
+    </object>
+    <object class="SnapshotTrack" id="{667a5715-b4d3-4726-b5a7-3fe16b1f9e84}"/>
+    <object class="AutomationTrack" id="{dee68248-ec91-479b-a289-f91abb9aa07f}"/>
 </objects>

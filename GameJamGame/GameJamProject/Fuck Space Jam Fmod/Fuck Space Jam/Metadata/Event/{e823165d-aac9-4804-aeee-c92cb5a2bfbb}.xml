@@ -36,7 +36,6 @@
         </relationship>
         <relationship name="parameters">
             <destination>{09c88966-9fc4-4369-80f6-b6c651cbb567}</destination>
-            <destination>{3d051b66-4728-4670-af9a-bb044068392f}</destination>
         </relationship>
         <relationship name="banks">
             <destination>{109437ab-7e89-47ed-bb43-13ff7f5113df}</destination>
@@ -134,14 +133,6 @@
             <destination>{f2af6a94-cd02-4678-839f-5ece60e8100d}</destination>
         </relationship>
     </object>
-    <object class="GameParameter" id="{3d051b66-4728-4670-af9a-bb044068392f}">
-        <property name="name">
-            <value>Type of room</value>
-        </property>
-        <property name="maximum">
-            <value>6</value>
-        </property>
-    </object>
     <object class="EventMixerMaster" id="{a7dea6b1-ea8f-4213-9418-85b99f245049}">
         <relationship name="effectChain">
             <destination>{1b53db1f-afbc-4cc9-ac82-3f94115016c8}</destination>
@@ -172,7 +163,7 @@
     </object>
     <object class="SingleSound" id="{f66efb85-a8a1-420b-b04c-05f0c6af05e9}">
         <property name="length">
-            <value>3.1085714285714294</value>
+            <value>0.80979591836734721</value>
         </property>
         <relationship name="audioFile">
             <destination>{38581ad4-15e6-4149-8f68-e8b9fb858a8b}</destination>
@@ -205,7 +196,7 @@
     </object>
     <object class="SingleSound" id="{3b9fa0fb-9069-451d-872e-2d6f0577a181}">
         <property name="length">
-            <value>3.1085714285714285</value>
+            <value>0.80979591836734699</value>
         </property>
         <relationship name="audioFile">
             <destination>{bd995498-908e-4e28-8401-c59e3fe91bcc}</destination>
@@ -238,7 +229,7 @@
     </object>
     <object class="SingleSound" id="{8763ab56-fe1d-4ff4-862d-4aff95f7405e}">
         <property name="length">
-            <value>3.1085714285714285</value>
+            <value>0.80979591836734699</value>
         </property>
         <relationship name="audioFile">
             <destination>{45c024dc-8057-4a60-9594-8ac4060088bd}</destination>
@@ -271,7 +262,7 @@
     </object>
     <object class="SingleSound" id="{0b701f6e-a703-4ee6-aaba-6af543f06a21}">
         <property name="length">
-            <value>3.1085714285714285</value>
+            <value>0.80979591836734699</value>
         </property>
         <relationship name="audioFile">
             <destination>{14548e45-d436-49a4-940a-83cdb337db6c}</destination>
@@ -295,14 +286,14 @@
         </relationship>
     </object>
     <object class="LoopRegion" id="{b188f325-e8db-4c82-ade3-0973d8bdfb59}">
+        <property name="triggerProbabilityEnabled">
+            <value>true</value>
+        </property>
         <property name="position">
             <value>0.069800000000000001</value>
         </property>
         <property name="length">
             <value>0.75766666666666671</value>
-        </property>
-        <property name="triggerProbabilityEnabled">
-            <value>true</value>
         </property>
         <relationship name="timeline">
             <destination>{084792cf-1c6f-4dc7-a0bd-f64423f5994f}</destination>

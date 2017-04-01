@@ -7,7 +7,22 @@
     </object>
     <object class="EventAutomatableProperties" id="{4c9d44d7-0854-4826-bb73-3d2eba4587e0}"/>
     <object class="MarkerTrack" id="{db02fb3a-b953-4b42-902d-f0632671b9d6}"/>
-    <object class="Timeline" id="{ac302ab4-683b-4090-aa47-4765ac2d3fcb}"/>
+    <object class="Timeline" id="{ac302ab4-683b-4090-aa47-4765ac2d3fcb}">
+        <property name="uiLastRulerScaleRatio">
+            <value>0.045112781954887216</value>
+        </property>
+        <property name="uiLastHorizontalScrollBarValue">
+            <value>25</value>
+        </property>
+    </object>
+    <object class="GameParameter" id="{c71c2ad9-718b-4472-85e6-970e9b26a723}">
+        <property name="cursorPosition">
+            <value>0</value>
+        </property>
+        <property name="uiLastRulerScaleRatio">
+            <value>0.15037593984962405</value>
+        </property>
+    </object>
     <object class="SnapshotMasterTrack" id="{6ca59940-435e-4d30-9a76-1c61b07d197e}"/>
     <object class="SnapshotProperty" id="{9c02a85b-ca40-481c-b23c-2fe6f3435ba1}"/>
     <object class="SnapshotProperty" id="{e1131606-aefc-42cc-8c7b-c5b5d09f61b1}"/>
@@ -23,6 +38,16 @@
     <object class="SnapshotProperty" id="{69072aed-f6b6-44b9-933b-f6a4ac2df42d}"/>
     <object class="SnapshotProperty" id="{b876a39c-e08a-4733-a7a8-c47b68ec277d}"/>
     <object class="SnapshotProperty" id="{45c6b7c3-0d3f-4fc5-a914-0361e197fb13}"/>
-    <object class="SnapshotTrack" id="{95e21b55-4748-4353-b587-429f05569b73}"/>
+    <object class="SnapshotProperty" id="{59856ac9-e45e-47cc-9d8e-bd8d03341273}"/>
+    <object class="SnapshotTrack" id="{95e21b55-4748-4353-b587-429f05569b73}">
+        <property name="uiAutomationTracksVisible">
+            <value>true</value>
+        </property>
+        <property name="uiTrackHeight">
+            <value>100</value>
+        </property>
+    </object>
     <object class="SnapshotTrack" id="{8ce3feac-f2b4-44ba-af7e-7fc5cbe68baa}"/>
+    <object class="SnapshotTrack" id="{141a668b-d147-4b07-9593-c829b8b634da}"/>
+    <object class="AutomationTrack" id="{f320b670-7117-4b70-b145-854f877756c9}"/>
 </objects>
