@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="AudioFile" id="{bd995498-908e-4e28-8401-c59e3fe91bcc}">
+        <property name="assetPath">
+            <value>FS Concrete.mp3</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>3.1085714285714285</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f02c09ec-28cc-441a-b9b9-964b89ee82c6}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="AudioFile" id="{1e255ab3-698b-4e53-828a-21f0b781f4d5}">
+        <property name="assetPath">
+            <value>Beep Prox 6.mp3</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>3.030204081632653</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f02c09ec-28cc-441a-b9b9-964b89ee82c6}</destination>
+        </relationship>
+    </object>
+</objects>

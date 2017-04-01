@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="Snapshot" id="{030d0fd0-a71d-4f82-9a76-dfaabcb7fdf2}">
+        <relationship name="uiLastParameterSelection">
+            <destination>{dfe6a7d0-6b17-4de7-b426-f82ceb38cd45}</destination>
+        </relationship>
+    </object>
+    <object class="EventAutomatableProperties" id="{1d38a43c-7fa3-4402-86ca-077d6508dcb4}"/>
+    <object class="MarkerTrack" id="{5de75646-3990-423b-9a51-d2e2fd91039b}"/>
+    <object class="Timeline" id="{dfe6a7d0-6b17-4de7-b426-f82ceb38cd45}"/>
+    <object class="SnapshotMasterTrack" id="{523eeb70-fa7a-42e5-b9e1-08e078202275}"/>
+    <object class="SnapshotProperty" id="{67294671-70b6-4cb7-94a0-3a46e1d870f0}"/>
+    <object class="SnapshotProperty" id="{61107c42-9a8e-4e90-8291-14a51c1ce6fa}"/>
+    <object class="SnapshotProperty" id="{baebe70f-5576-4189-a2bf-edd3749fdd0d}"/>
+    <object class="SnapshotProperty" id="{6b4b98c3-3773-404e-89d8-3d02249c4b13}"/>
+    <object class="SnapshotProperty" id="{2aaa048c-1aad-469b-b261-cec47d02d3cd}"/>
+    <object class="SnapshotProperty" id="{6995298f-08c5-4a7c-a9d2-989d62e3277c}"/>
+    <object class="SnapshotProperty" id="{fd802fc9-e5d9-4c59-805e-5899ff7893c9}"/>
+    <object class="SnapshotProperty" id="{52594eac-9745-4278-84d9-0f8e189f7213}"/>
+    <object class="SnapshotProperty" id="{3d55841d-a2b0-44a9-b5c6-58a9a7281c09}"/>
+    <object class="SnapshotProperty" id="{e3ae709a-b9ec-4e5a-a698-bcaae4743641}"/>
+    <object class="SnapshotProperty" id="{c2ce31da-bc46-404a-8664-b59d3e884508}"/>
+    <object class="SnapshotProperty" id="{5895c642-78af-4284-aeda-1d90a0b4b85a}"/>
+    <object class="SnapshotProperty" id="{9d01541a-830a-4eae-af77-386f20de9967}"/>
+    <object class="SnapshotProperty" id="{8de2cf97-29b6-47b4-abeb-6581de53480e}"/>
+    <object class="SnapshotProperty" id="{b498a666-b84d-48ff-acfe-f7600a4c0e59}"/>
+    <object class="SnapshotTrack" id="{264aaa3a-bdac-4505-ac6d-b03507bad857}"/>
+    <object class="SnapshotTrack" id="{185af52c-72d8-4774-8c82-d8a9040b4014}"/>
+</objects>

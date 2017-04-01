@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="MixerGroup" id="{54450d75-ea11-41a6-8418-d3197690609b}">
+        <property name="name">
+            <value>Seeker Sounds</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{86e2b1c7-f5da-4ba8-897f-84ceb7182384}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{20dfac99-5c1c-4869-9da0-9a974ff1c4e3}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{d25507e9-32c1-425f-966f-6fa6d51fd779}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{86e2b1c7-f5da-4ba8-897f-84ceb7182384}">
+        <relationship name="effects">
+            <destination>{9cb2f3ff-f404-44f2-a2dd-fe5aa14d8e96}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{20dfac99-5c1c-4869-9da0-9a974ff1c4e3}"/>
+    <object class="MixerBusFader" id="{9cb2f3ff-f404-44f2-a2dd-fe5aa14d8e96}"/>
+</objects>

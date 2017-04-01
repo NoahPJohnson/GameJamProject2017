@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="Snapshot" id="{e1c6aa67-2a72-4f03-9836-e490c1dd7004}">
+        <relationship name="uiLastParameterSelection">
+            <destination>{26e3a17e-d6b1-4c8d-99f7-7cd6025babac}</destination>
+        </relationship>
+    </object>
+    <object class="EventAutomatableProperties" id="{1591232a-98ea-4713-a8bb-ea139876ddc7}"/>
+    <object class="MarkerTrack" id="{75705aa4-8297-45df-a98d-4bf0b3a98337}"/>
+    <object class="Timeline" id="{26e3a17e-d6b1-4c8d-99f7-7cd6025babac}"/>
+    <object class="SnapshotMasterTrack" id="{79d459a6-78bc-4e48-9110-1666e5eea71d}"/>
+    <object class="SnapshotProperty" id="{d2e3feeb-16a0-4a96-9923-b5a2c52d76e8}"/>
+    <object class="SnapshotProperty" id="{f13b4217-52fe-466e-93b1-a99c83bb2718}"/>
+    <object class="SnapshotProperty" id="{6e817546-9587-4828-b0cd-a958d2fcd09c}"/>
+    <object class="SnapshotProperty" id="{2a1d9f6d-8031-4740-acd2-0e054ed1dc20}"/>
+    <object class="SnapshotProperty" id="{4376cdb3-05c2-4f25-9f26-0fb5e5044341}"/>
+    <object class="SnapshotProperty" id="{e3fea721-de32-45b1-8e66-253b24515820}"/>
+    <object class="SnapshotProperty" id="{880a62c4-45a7-4c86-8655-206fa54665da}"/>
+    <object class="SnapshotProperty" id="{07a0644b-131f-4ef4-9448-923a3da738b8}"/>
+    <object class="SnapshotProperty" id="{e5c53789-64e5-45e1-bcc9-606f848a6f90}"/>
+    <object class="SnapshotProperty" id="{14f396a2-8f25-44a5-88a1-9f8b7af5ba20}"/>
+    <object class="SnapshotProperty" id="{16c55f13-6871-4da8-8b8b-49b8a080509d}"/>
+    <object class="SnapshotProperty" id="{633d6992-2e07-4874-ade6-8d5347ee8e4d}"/>
+    <object class="SnapshotProperty" id="{7a2399f3-09f9-48ad-a522-5b713d22b683}"/>
+    <object class="SnapshotProperty" id="{8f99fdc0-4bd0-428b-be1f-361416f924b2}"/>
+    <object class="SnapshotTrack" id="{4d6f714b-b216-4902-8c11-083d1587ecdb}"/>
+    <object class="SnapshotTrack" id="{7dea6dda-cd85-4f1c-b605-eddb19402b20}"/>
+</objects>

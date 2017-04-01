@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/GameJamTestScene.unity
+  isLoaded: 1
+  isActive: 1
