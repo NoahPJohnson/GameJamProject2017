@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class LookScript : MonoBehaviour
 {
-    [SerializeField]
-    Transform body;
-    [SerializeField]
-    Quaternion turnRotation;
-    [SerializeField]
-    Quaternion lookRotation;
+    [SerializeField] Transform body;
+    [SerializeField] Quaternion turnRotation;
+    [SerializeField] Quaternion lookRotation;
+    [SerializeField] Quaternion halfRotation;
+    [SerializeField] float lookSensitivity;
+    
 
     [SerializeField]
     float xRotation;
@@ -27,11 +27,12 @@ public class LookScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        xRotation += Input.GetAxis("Mouse X");
-        yRotation += Input.GetAxis("Mouse Y");
-        turnRotation = Quaternion.Euler(0, xRotation, 0);
+        xRotation += Input.GetAxis("Mouse X") * lookSensitivity * Time.deltaTime;
+        yRotation += Input.GetAxis("Mouse Y") * lookSensitivity * Time.deltaTime;
+        turnRotation = Quaternion.Euler(0, xRotation+180, 0);
         lookRotation = Quaternion.Euler(-yRotation, 0, 0);
         transform.localRotation = lookRotation;
+        //transform.localRotation = Quaternion.Euler(0, 180, 0);
         body.localRotation = turnRotation;
     }
 }

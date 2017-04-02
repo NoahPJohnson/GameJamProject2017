@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovementScript : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class PlayerMovementScript : MonoBehaviour
     //RaycastHit hit;
     [SerializeField] Camera headCamera;
     [SerializeField] CharacterController characterController;
+
+    [SerializeField] Image stealthIndicator;
+    [SerializeField] Color noiseColor;
 
     [FMODUnity.EventRef]
     [SerializeField]
@@ -50,6 +54,7 @@ public class PlayerMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(footstepEvent, transform, GetComponent<Rigidbody>());
         RaycastHit hit;
         Ray ray = new Ray(transform.position, downVector);
         if (Physics.Raycast(ray, out hit))
@@ -78,10 +83,11 @@ public class PlayerMovementScript : MonoBehaviour
 
         if (moveVector.magnitude > 0 && sneaking == false)
         {
-            //floorType.setValue(2);
+            //stealthIndicator.color = noiseColor;
         }
         else
         {
+            //stealthIndicator.color = noiseColor;
             floorType.setValue(0);
         }
     }

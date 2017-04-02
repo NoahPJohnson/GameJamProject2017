@@ -30,9 +30,12 @@ public class GameManagementScript : MonoBehaviour
     [SerializeField] Image[] roundDisplay;
     [SerializeField] InputField finderInput;
 
+    [SerializeField] Coroutine incrementCoroutine;
+
 	// Use this for initialization
 	void Start ()
     {
+        incrementCoroutine = null;
         objectiveIndex = Random.Range(0, phones.Length);
         phones[objectiveIndex].SetActive(true);
         player1Turn = true;
@@ -147,12 +150,14 @@ public class GameManagementScript : MonoBehaviour
 
     public void StartIncrementingScore()
     {
-        StartCoroutine(IncreasePlayer1Score());
+        incrementCoroutine = StartCoroutine(IncreasePlayer1Score());
     }
 
     public void StopIncrementingScore()
     {
-        StopCoroutine(IncreasePlayer1Score());
+        //Debug.Log("Stop it");
+        StopCoroutine(incrementCoroutine);
+        incrementCoroutine = null;
     }
 
     public void DisablePlayer2Panel2()

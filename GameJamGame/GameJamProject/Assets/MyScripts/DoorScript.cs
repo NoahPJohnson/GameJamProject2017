@@ -6,26 +6,16 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
-    [SerializeField]
-    bool interactible = true;
-    [SerializeField]
-    bool open = false;
-    [SerializeField]
-    bool quietDoor;
-    [SerializeField]
-    float swingOpenDelay;
-    [SerializeField]
-    float swingOpenSpeed;
-    [SerializeField]
-    float swingCloseSpeed;
-    [SerializeField]
-    float swingValue;
-    [SerializeField]
-    float timer;
-    [SerializeField]
-    Quaternion closeRotation;
-    [SerializeField]
-    Quaternion openRotation;
+    [SerializeField] bool interactible = true;
+    [SerializeField] bool open = false;
+    [SerializeField] bool quietDoor;
+    [SerializeField] float swingOpenDelay;
+    [SerializeField] float swingOpenSpeed;
+    [SerializeField] float swingCloseSpeed;
+    [SerializeField] float swingValue;
+    [SerializeField] float timer;
+    [SerializeField] Quaternion closeRotation;
+    [SerializeField] Quaternion openRotation;
     //[SerializeField] GameObject player;
 
     [FMODUnity.EventRef]

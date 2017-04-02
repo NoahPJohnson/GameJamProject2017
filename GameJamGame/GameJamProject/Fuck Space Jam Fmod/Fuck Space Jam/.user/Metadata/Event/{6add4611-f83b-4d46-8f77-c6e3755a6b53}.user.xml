@@ -5,7 +5,7 @@
             <destination>{e79c31b1-1a1e-48a3-9443-1d7923e9d1c0}</destination>
         </relationship>
         <relationship name="uiLastParameterSelection">
-            <destination>{e4867c17-37a0-4303-8bde-788986dc6894}</destination>
+            <destination>{1c158fa7-c081-4894-aeed-33eb6f50bc42}</destination>
         </relationship>
     </object>
     <object class="MasterTrack" id="{e79c31b1-1a1e-48a3-9443-1d7923e9d1c0}"/>

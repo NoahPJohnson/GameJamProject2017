@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.09.00">
     <object class="Snapshot" id="{87ce5b87-fb69-477d-a4fc-1755979b7679}">
         <relationship name="uiLastParameterSelection">
-            <destination>{d8eaa8f8-a258-40ea-9644-af64397dbfcf}</destination>
+            <destination>{5aaab229-44b9-4ba3-820d-dad42627f7f8}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{f0dc3ff8-a4e9-480b-8090-0975d6a006c8}"/>
