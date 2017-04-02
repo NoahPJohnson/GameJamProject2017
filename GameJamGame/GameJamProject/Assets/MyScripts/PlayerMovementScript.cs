@@ -7,6 +7,9 @@ public class PlayerMovementScript : MonoBehaviour
     [SerializeField] bool sneakPlayer;
     [SerializeField] bool sneaking;
     [SerializeField] float speed;
+    [SerializeField] float jogSpeed;
+    [SerializeField] float sneakSpeed;
+    [SerializeField] float floorTypeValue;
     [SerializeField] Vector3 moveVector;
     [SerializeField] Camera headCamera;
     [SerializeField] CharacterController characterController;
@@ -21,7 +24,7 @@ public class PlayerMovementScript : MonoBehaviour
     {
         footstepEvent = FMODUnity.RuntimeManager.CreateInstance(footstepName);
         footstepEvent.getParameter("FootStep Type", out floorType);
-        floorType.setValue(2);
+        floorType.setValue(0);
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(footstepEvent, transform, GetComponent<Rigidbody>());
         footstepEvent.start();
     }
@@ -36,17 +39,18 @@ public class PlayerMovementScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             sneaking = true;
-            speed = speed / 2;
+            speed = sneakSpeed;
+            floorType.setValue(0);
         }
-        else
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             sneaking = false;
+            speed = jogSpeed;
         }
 
 
-        if (moveVector.magnitude > 0)
+        if (moveVector.magnitude > 0 && sneaking == false)
         {
-            Debug.Log("PlayFootsteps");
             floorType.setValue(2);
         }
         else

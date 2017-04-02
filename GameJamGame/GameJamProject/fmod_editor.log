@@ -15,7 +15,7 @@
 [LOG] SystemI::init                            : create the stream thread
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000000D9457A8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000002B2CCDF8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -29,7 +29,63 @@
 [LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
 [LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SoundI::release                          :  (000000002B2CCB28)
+[LOG] SoundI::release                          : release subsounds. (000000002B2CCB28)
+[LOG] SoundI::release                          :     FS Gravel (000000002E7E7148)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000002B2CCB28)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000002B2CC288)
+[LOG] SoundI::release                          : release subsounds. (000000002B2CC288)
+[LOG] SoundI::release                          :     FS Wood (000000002E7E9D28)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000002B2CC288)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000002B2CC6D8)
+[LOG] SoundI::release                          : release subsounds. (000000002B2CC6D8)
+[LOG] SoundI::release                          :     FS Carpet (000000002E7E6928)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000002B2CC6D8)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000002B2CC568)
+[LOG] SoundI::release                          : release subsounds. (000000002B2CC568)
+[LOG] SoundI::release                          :     FS Concrete (000000002E7E7968)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000002B2CC568)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000002B2CC9B8)
+[LOG] SoundI::release                          : release subsounds. (000000002B2CC9B8)
+[LOG] SoundI::release                          :     D Normal Open (000000002E7E84C8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000002B2CC9B8)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000002B2CC848)
+[LOG] SoundI::release                          : release subsounds. (000000002B2CC848)
+[LOG] SoundI::release                          :     D Creak (000000002E7E9508)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000002B2CC848)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (0000000011524598)
+[LOG] SoundI::release                          : release subsounds. (0000000011524598)
+[LOG] SoundI::release                          :     D Normal Shut (000000002E7E8188)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (0000000011524598)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000002B2CBE38)
+[LOG] SoundI::release                          : release subsounds. (000000002B2CBE38)
+[LOG] SoundI::release                          :     D Large Open (000000002E7E6FA8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000002B2CBE38)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (000000002B2CC3F8)
+[LOG] SoundI::release                          : release subsounds. (000000002B2CC3F8)
+[LOG] SoundI::release                          :     D Large Shut (000000002E7E9028)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000002B2CC3F8)
+[LOG] SoundI::release                          : done
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
@@ -45,4 +101,3 @@
 [LOG] SystemI::close                           : Free channel pool.
 [LOG] SystemI::close                           : done.
 
-[LOG] System::create                           : Header version = 1.09.01. Current version = 1.09.01.

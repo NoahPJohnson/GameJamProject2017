@@ -12,20 +12,14 @@ public class PlayerSwitchScript : MonoBehaviour
     //[SerializeField] float player1ActiveTime;
     //[SerializeField] float player2ActiveTime;
 
-    float Timer = 5;
+    //float Timer = 5;
 
     // Use this for initialization
     void Start()
     {
         EnablePlayer(player1);
         DisablePlayer(player2);
-        player1Turn = true;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        player1Turn = false;
     }
 
     public void Switch()
@@ -34,16 +28,14 @@ public class PlayerSwitchScript : MonoBehaviour
         {
             EnablePlayer(player1);
             DisablePlayer(player2);
-            Time.timeScale = 1;
-            Timer = 5;
+            //Time.timeScale = 1;
             player1Turn = true;
         }
         else
         {
             EnablePlayer(player2);
             DisablePlayer(player1);
-            Time.timeScale = 1;
-            Timer = 5;
+            //Time.timeScale = 1;
             player1Turn = false;
         }
     }

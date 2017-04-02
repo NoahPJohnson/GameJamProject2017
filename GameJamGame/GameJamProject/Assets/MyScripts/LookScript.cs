@@ -10,6 +10,7 @@ public class LookScript : MonoBehaviour
 
     [SerializeField] float xRotation;
     [SerializeField] float yRotation;
+    [SerializeField] int roomType;
 
 	// Use this for initialization
 	void Start ()

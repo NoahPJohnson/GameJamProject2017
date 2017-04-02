@@ -29,8 +29,8 @@ public class DoorScript : MonoBehaviour
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(doorEvent, transform, GetComponent<Rigidbody>());
         closeRotation = transform.localRotation;
         openRotation = Quaternion.Euler(transform.localRotation.eulerAngles + new Vector3(0, 90, 0));
-        Debug.Log(transform.localRotation.y + 90);
-        Debug.Log(openRotation);
+        //Debug.Log(transform.localRotation.y + 90);
+        //Debug.Log(openRotation);
     }
 	
 	IEnumerator SwingDoor()
@@ -45,7 +45,7 @@ public class DoorScript : MonoBehaviour
             //PlaySound
             FMODUnity.RuntimeManager.AttachInstanceToGameObject(doorEvent, transform, GetComponent<Rigidbody>());
             doorEvent.start();
-            Debug.Log("PLAY SOUND");
+            //Debug.Log("PLAY SOUND");
             while (Mathf.Abs(transform.localRotation.eulerAngles.y - openRotation.eulerAngles.y) > 0)
             {
                 transform.localRotation = Quaternion.RotateTowards(transform.localRotation, openRotation, swingOpenSpeed * Time.deltaTime);
@@ -65,7 +65,7 @@ public class DoorScript : MonoBehaviour
             //PlaySound
             FMODUnity.RuntimeManager.AttachInstanceToGameObject(doorEvent, transform, GetComponent<Rigidbody>());
             doorEvent.start();
-            Debug.Log("PLAY OTHER SOUND");
+            //Debug.Log("PLAY OTHER SOUND");
             interactible = true;
             yield return null;
         }

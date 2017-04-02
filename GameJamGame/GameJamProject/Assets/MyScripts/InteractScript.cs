@@ -36,6 +36,10 @@ public class InteractScript : MonoBehaviour
     {
         if (other.tag == "Door")
         {
+            /*if (other.transform != door)
+            {
+
+            }*/
             door = other.transform;
             doorScript = door.parent.GetComponent<DoorScript>();
         }
@@ -45,7 +49,10 @@ public class InteractScript : MonoBehaviour
     {
         if (other.tag == "Door")
         {
-            doorScript.InterruptSwing();
+            if (doorScript != null)
+            {
+                doorScript.InterruptSwing();
+            }
             door = null;
             doorScript = null;
         }

@@ -14,32 +14,33 @@
     </object>
     <object class="GameParameter" id="{d8eaa8f8-a258-40ea-9644-af64397dbfcf}">
         <property name="cursorPosition">
-            <value>0</value>
+            <value>100</value>
         </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.15037593984962405</value>
         </property>
     </object>
     <object class="SnapshotMasterTrack" id="{eea6ae8f-4501-4389-976d-295bb9ffee9e}"/>
-    <object class="SnapshotProperty" id="{15d568d4-bee5-4eb0-83dc-20f6552cd849}"/>
-    <object class="SnapshotProperty" id="{80ec6caa-5cae-4718-9a4e-ed2d5b81235a}"/>
-    <object class="SnapshotProperty" id="{ab9532d3-fd8b-4204-862d-b285d36d01fc}"/>
-    <object class="SnapshotProperty" id="{68eb643e-2ca0-4c60-a683-8ef190192384}"/>
-    <object class="SnapshotProperty" id="{3a0a5d7a-7c5a-4378-94f3-1a7d7425b872}"/>
-    <object class="SnapshotProperty" id="{4324323c-a2b1-4614-8bd2-3fd2580d7c00}"/>
-    <object class="SnapshotProperty" id="{86d714ba-fbfd-4bd5-b67f-83e6417fbebd}"/>
-    <object class="SnapshotProperty" id="{f6a37c15-dd28-4f11-bc59-fe5fc0032ed2}"/>
-    <object class="SnapshotProperty" id="{a5004420-3f1f-4be8-a549-b0156d8cf6e7}"/>
-    <object class="SnapshotProperty" id="{e4e9bd5a-af01-4a38-9445-25cf3e29acbe}"/>
-    <object class="SnapshotProperty" id="{de898ec8-bc6d-47e9-a8f1-1a9c9175817f}"/>
-    <object class="SnapshotProperty" id="{c155e514-992e-4f42-bd25-eedd4dc180a5}"/>
-    <object class="SnapshotProperty" id="{bc2990cd-5bd1-42ac-b3c1-3537f1b210a1}"/>
-    <object class="SnapshotProperty" id="{c21a10ab-8f37-43b0-bae9-e8cab8a1ad16}"/>
-    <object class="SnapshotProperty" id="{f2c14934-5d75-4c61-8154-cf83398b1123}"/>
-    <object class="SnapshotProperty" id="{0b471934-7d18-4c03-b5e4-396447f687a4}"/>
     <object class="SnapshotProperty" id="{5d22e84c-ec3f-46da-af6a-4a92fb5d7e32}"/>
+    <object class="SnapshotProperty" id="{d7899b26-021a-4167-8f5b-031da7b20d87}"/>
+    <object class="SnapshotProperty" id="{378ebd58-93d0-4cb8-9716-be31fce26e57}"/>
+    <object class="SnapshotProperty" id="{1159a9d3-d327-4e80-8edb-3337c9c9c917}"/>
+    <object class="SnapshotProperty" id="{98468c3c-18d9-4471-85dd-918a3a1f8be3}"/>
+    <object class="SnapshotProperty" id="{53599944-abdb-444a-b614-469c4006cf6c}"/>
+    <object class="SnapshotProperty" id="{a890c4f3-1f30-4d8a-a203-ed2f6ff34d47}"/>
+    <object class="SnapshotProperty" id="{2b179943-2cc5-4bf7-b906-a1c1b58b9e35}"/>
+    <object class="SnapshotProperty" id="{968b253b-e908-4487-9172-2c4666b7ecb5}"/>
+    <object class="SnapshotProperty" id="{40141055-39f9-4e25-9787-b2910ccb8317}"/>
+    <object class="SnapshotProperty" id="{d05442b2-4d84-419a-a53d-b67dbdc21ae9}"/>
+    <object class="SnapshotProperty" id="{55d49d99-2ee3-41cf-a372-cd705e61d53f}"/>
+    <object class="SnapshotProperty" id="{5083a02e-f7c6-492c-a0d5-9061b2575f76}"/>
+    <object class="SnapshotProperty" id="{add49474-a354-443c-b86a-8b90ace2b347}"/>
+    <object class="SnapshotProperty" id="{33b7d0c3-7ebe-49a3-ae41-6b57cf70ba6a}"/>
+    <object class="SnapshotProperty" id="{2071d2c9-2940-4f36-b58c-d2dd3ba8071f}"/>
+    <object class="SnapshotProperty" id="{4ad9a311-552a-49ac-81d7-6d1599c86d36}"/>
     <object class="SnapshotTrack" id="{d6da8be7-70bd-4c22-9d1e-54ffea34efa6}"/>
-    <object class="SnapshotTrack" id="{3ffc6ac2-5ab0-4a1f-8283-73a9fc337504}">
+    <object class="SnapshotTrack" id="{9523bdb7-d6f4-4df6-9fa5-dd3598dccf7a}"/>
+    <object class="SnapshotTrack" id="{d9742a55-3711-49f4-a1d0-d7523ebce703}">
         <property name="uiAutomationTracksVisible">
             <value>true</value>
         </property>
@@ -47,7 +48,6 @@
             <value>100</value>
         </property>
     </object>
-    <object class="SnapshotTrack" id="{9523bdb7-d6f4-4df6-9fa5-dd3598dccf7a}"/>
-    <object class="AutomationTrack" id="{6daba13f-dc17-4e15-b75e-2e60ffa3f631}"/>
     <object class="AutomationTrack" id="{6c5fd04b-1f4b-420b-8dc9-199b31e35783}"/>
+    <object class="AutomationTrack" id="{68648c01-f1e6-405b-af26-b222abee2257}"/>
 </objects>
