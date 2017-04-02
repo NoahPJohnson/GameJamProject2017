@@ -22,13 +22,13 @@ public class GameManagementScript : MonoBehaviour
     [SerializeField] GameObject endGamePanel;
 
     [SerializeField] GameObject[] phones;
- 
-    [SerializeField] Transform[] phoneObjectives;
 
     [SerializeField] Text timerText;
     [SerializeField] Text endGameText;
+    [SerializeField] Text objectiveText;
     [SerializeField] Image objectiveImage;
     [SerializeField] Image[] roundDisplay;
+    [SerializeField] InputField finderInput;
 
 	// Use this for initialization
 	void Start ()
@@ -38,15 +38,17 @@ public class GameManagementScript : MonoBehaviour
         player1Turn = true;
         paused = false;
         firstTurn = true;
-        objectiveIndex = Random.Range(0, phoneObjectives.Length);
+        //objectiveIndex = Random.Range(0, phoneObjectives.Length);
         round = 0;
         gameTimer = gameTimerInitial;
         player1Score = 0f;
+        UpdateObjectiveImage();
         timerText.text = Mathf.FloorToInt(gameTimer / 60).ToString() + ":" + (gameTimer % 60).ToString();
         for (int i = 0; i < roundDisplay.Length; i ++)
         {
             roundDisplay[i].enabled = false;
         }
+        
         TogglePause();
 	}
 	
@@ -65,15 +67,22 @@ public class GameManagementScript : MonoBehaviour
         {
             paused = true;
             Time.timeScale = 0f;
+            StopCoroutine(CountDown());
             GetComponent<PlayerSwitchScript>().StopAllFootsteps();
             GetComponent<PlayerSwitchScript>().Switch();
             if (player1Turn == true)
             {
+                objectiveImage.enabled = true;
                 if (firstTurn == false)
                 {
                     player2Panel2.SetActive(true);
                 }
+                else
+                {
+                    StartCoroutine(CountDown());
+                }
                 firstTurn = false;
+                CheckPlayer1Score();
                 player1Panel.SetActive(true);
                 player1Turn = false;
                 round++;
@@ -82,21 +91,23 @@ public class GameManagementScript : MonoBehaviour
             }
             else
             {
+                objectiveImage.enabled = false;
                 player2Panel.SetActive(true);
                 player1Turn = true;
-                CheckPlayer1Score();
+                
             }
             
         }
         else
         {
+            objectiveText.text = "0";
             paused = false;
             Time.timeScale = 1f;
             player1Panel.SetActive(false);
             player2Panel.SetActive(false);
             GetComponent<PlayerSwitchScript>().StartAllFootsteps();
             gameTimer = gameTimerInitial;
-            StartCoroutine(CountDown());
+            
         }
     }
 
@@ -108,13 +119,15 @@ public class GameManagementScript : MonoBehaviour
             timerText.text = Mathf.FloorToInt(gameTimer / 60).ToString() + ":" + (gameTimer % 60).ToString("F0");
             yield return null;
         }
+        gameTimer = gameTimerInitial;
+        StartCoroutine(CountDown());
         TogglePause();
     }
 
     IEnumerator IncreasePlayer1Score()
     {
         yield return new WaitForSeconds(1f);
-        while (player1Score < player1VictoryValue)
+        while (player1Score < player1VictoryValue && player1Turn == false)
         {
             player1Score += Time.deltaTime;
             UpdateObjectiveImage();
@@ -147,6 +160,12 @@ public class GameManagementScript : MonoBehaviour
         player2Panel2.SetActive(false);
     }
 
+    public void DisplayObjective()
+    {
+        objectiveText.text = (objectiveIndex+1).ToString();
+        //Debug.Log(objectiveIndex);
+    }
+
     public void CheckPlayer1Score()
     {
         if (player1Score >= player1VictoryValue)
@@ -174,9 +193,10 @@ public class GameManagementScript : MonoBehaviour
         }
     }
 
-    public void CheckObjectiveIndex(int indexToCheck)
+    public void CheckObjectiveIndex()
     {
-        if (indexToCheck-1 == objectiveIndex)
+        int indexToCheck = System.Int32.Parse(finderInput.text);
+        if ((indexToCheck-1) == objectiveIndex)
         {
             //Finder Wins
             TogglePause();
@@ -200,6 +220,7 @@ public class GameManagementScript : MonoBehaviour
 
     public void InitializeGame()
     {
+        StopAllCoroutines();
         endGamePanel.SetActive(false);
         GetComponent<PlayerSwitchScript>().ResetPlayer1();
         GetComponent<PlayerSwitchScript>().ResetPlayer2();
@@ -208,10 +229,10 @@ public class GameManagementScript : MonoBehaviour
         player1Turn = true;
         paused = false;
         firstTurn = true;
-        objectiveIndex = Random.Range(0, phoneObjectives.Length);
         round = 0;
         gameTimer = gameTimerInitial;
         player1Score = 0f;
+        UpdateObjectiveImage();
         timerText.text = Mathf.FloorToInt(gameTimer / 60).ToString() + ":" + (gameTimer % 60).ToString();
         for (int i = 0; i < roundDisplay.Length; i++)
         {

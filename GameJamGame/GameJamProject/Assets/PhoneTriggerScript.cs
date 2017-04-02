@@ -10,7 +10,7 @@ public class PhoneTriggerScript : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-		
+        gameManagerScript = GameManagerObject.GetComponent<GameManagementScript>();
 	}
 	
 	// Update is called once per frame
