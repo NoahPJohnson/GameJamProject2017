@@ -4,22 +4,28 @@ using UnityEngine;
 
 public class LookScript : MonoBehaviour
 {
-    [SerializeField] Transform body;
-    [SerializeField] Quaternion turnRotation;
-    [SerializeField] Quaternion lookRotation;
+    [SerializeField]
+    Transform body;
+    [SerializeField]
+    Quaternion turnRotation;
+    [SerializeField]
+    Quaternion lookRotation;
 
-    [SerializeField] float xRotation;
-    [SerializeField] float yRotation;
-    [SerializeField] int roomType;
+    [SerializeField]
+    float xRotation;
+    [SerializeField]
+    float yRotation;
+    [SerializeField]
+    int roomType;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         body = transform.parent;
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         xRotation += Input.GetAxis("Mouse X");
         yRotation += Input.GetAxis("Mouse Y");
@@ -27,5 +33,5 @@ public class LookScript : MonoBehaviour
         lookRotation = Quaternion.Euler(-yRotation, 0, 0);
         transform.localRotation = lookRotation;
         body.localRotation = turnRotation;
-	}
+    }
 }

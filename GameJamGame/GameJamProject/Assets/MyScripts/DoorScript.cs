@@ -1,28 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
-    [SerializeField] bool interactible = true;
-    [SerializeField] bool open = false;
-    [SerializeField] bool quietDoor;
-    [SerializeField] float swingOpenDelay;
-    [SerializeField] float swingOpenSpeed;
-    [SerializeField] float swingCloseSpeed;
-    [SerializeField] float swingValue;
-    [SerializeField] float timer;
-    [SerializeField] Quaternion closeRotation;
-    [SerializeField] Quaternion openRotation;
+    [SerializeField]
+    bool interactible = true;
+    [SerializeField]
+    bool open = false;
+    [SerializeField]
+    bool quietDoor;
+    [SerializeField]
+    float swingOpenDelay;
+    [SerializeField]
+    float swingOpenSpeed;
+    [SerializeField]
+    float swingCloseSpeed;
+    [SerializeField]
+    float swingValue;
+    [SerializeField]
+    float timer;
+    [SerializeField]
+    Quaternion closeRotation;
+    [SerializeField]
+    Quaternion openRotation;
     //[SerializeField] GameObject player;
 
     [FMODUnity.EventRef]
-    [SerializeField] string doorEventName = "event:/Seeker Sounds/Door";
+    [SerializeField]
+    string doorEventName = "event:/Seeker Sounds/Door";
     FMOD.Studio.EventInstance doorEvent;
     FMOD.Studio.ParameterInstance doorSoundType;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         doorEvent = FMODUnity.RuntimeManager.CreateInstance(doorEventName);
         doorEvent.getParameter("Door Select", out doorSoundType);
@@ -32,8 +45,8 @@ public class DoorScript : MonoBehaviour
         //Debug.Log(transform.localRotation.y + 90);
         //Debug.Log(openRotation);
     }
-	
-	IEnumerator SwingDoor()
+
+    IEnumerator SwingDoor()
     {
         if (open == true)
         {
@@ -51,7 +64,7 @@ public class DoorScript : MonoBehaviour
                 transform.localRotation = Quaternion.RotateTowards(transform.localRotation, openRotation, swingOpenSpeed * Time.deltaTime);
                 yield return null;
             }
-            
+
             interactible = true;
             yield return null;
         }

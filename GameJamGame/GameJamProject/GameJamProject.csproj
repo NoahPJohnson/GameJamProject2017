@@ -90,6 +90,7 @@
     <Compile Include="Assets\MyScripts\PlayerMovementScript.cs" />
     <Compile Include="Assets\MyScripts\PlayerSwitchScript.cs" />
     <Compile Include="Assets\MyScripts\SnapshotScript.cs" />
+    <Compile Include="Assets\PhoneTriggerScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\FMOD\LICENSE.TXT" />
